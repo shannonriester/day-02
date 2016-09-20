@@ -21,26 +21,6 @@ img {
   padding: 0 10px;
 }
 
-a.octocat {
-  width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 50px solid #2f2f2f;
-	font-size: 0;
-	line-height: 0;
-}
-
-a.octocat::before {
-  border-bottom-color: #fff;  /* arrow color */
-
-	/* positioning */
-	position: absolute;
-	top: 200px;
-	left: 200px;
-	z-index: 2;
-}
-
 
 /*- - - - - Footer items (below main image)- - - - - */
 
@@ -51,8 +31,10 @@ a.octocat::before {
 }
 
 .image-caption {
-  display: inline-block;
-  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*padding-right: 30px;*/
 }
 
 .image-caption img {
@@ -60,9 +42,9 @@ a.octocat::before {
   margin-bottom: -10px;
 }
 
-/*.image-footer {
-  text-align: right;
-}*/
+.caption-text {
+  margin: 0;
+}
 
 .image-caption a {
   text-decoration: none;
@@ -76,11 +58,41 @@ a.octocat::before {
 
 .authors {
   list-style-type: none;
-  display: inline-block;
-  padding: 0;
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
 }
 
 .authors img {
   border: none;
   border-radius: 15%;
+}
+
+.authors li {
+  display: inline-block;
+  list-style-type: none;
+
+}
+
+/* - - triangle shapes - - */
+
+.octocat li {
+  /*position must be relative for absolution positioning to work later */
+  position: relative;
+  width: 0;
+	height: 0;
+}
+
+.authors::after {
+  content: ' ';
+  height: 0;
+  width: 0;
+  border: 8.5px solid transparent;
+  border-top-color: #CACACA;
+  position: relative;
+  bottom: 41px;
+  left: 62px;
 }
