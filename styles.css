@@ -94,18 +94,18 @@ img {
   right: 23px;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 449px) {
   .octodex {
     flex-direction: column;
   }
   .octocat {
-    width: 75%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0 auto;
+    margin-bottom: 5%;
   }
 
   img {
-    height: 270px;
+    height: 300px;
   }
 
   .image-caption img {
@@ -128,5 +128,107 @@ img {
 
   .caption-text {
     margin-right: 10px;
+  }
+}
+@media (min-width: 450px) {
+  .octodex {
+    flex-direction: column;
+  }
+  .octocat {
+    /*overflow: hidden;*/
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  img {
+    height: 350px;
+  }
+
+  .image-caption img {
+    height: 20px;
+  }
+
+  .authors {
+    position: static;
+    left: 0;
+  }
+
+  .authors::after {
+    bottom: 15px;
+    right: 18px;
+  }
+
+  .image-footer {
+    font-size: 13px;
+  }
+
+  .caption-text {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 600px) {
+  .octodex {
+    flex-direction: column;
+  }
+  .octocat {
+    /*overflow: hidden;*/
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  img {
+    height: 400px;
+  }
+
+  .image-caption img {
+    height: 20px;
+  }
+
+  .authors {
+    position: static;
+    left: 0;
+  }
+
+  .authors::after {
+    bottom: 15px;
+    right: 18px;
+  }
+
+  .image-footer {
+    font-size: 13px;
+  }
+
+  .caption-text {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .octodex {
+    flex-direction: row;
+  }
+  img {
+    height: 275px;
+  }
+}
+
+@media (min-width: 1000px) {
+  img {
+    height: 325px;
+  }
+}
+@media (min-width: 1150px) {
+  img {
+    height: 385px;
+  }
+}
+@media (min-width: 1250px) {
+  img {
+    height: 405px;
+  }
+}
+@media (min-width: 1350px) {
+  img {
+    height: 430px;
   }
 }
