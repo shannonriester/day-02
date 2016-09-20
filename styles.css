@@ -27,16 +27,17 @@ img {
 .image-footer {
   display: flex;
   align-items: center;
-  padding-bottom: 7px;
+  justify-content: space-between;
+  padding: 7px 0 7px 0;
   border-bottom: solid #CACACA 1px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .image-caption {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 60%;
+  justify-content: center;
+  /*width: 60%;*/
 }
 
 .image-caption img {
@@ -45,7 +46,6 @@ img {
 
 .caption-text {
   margin: 0;
-  width: 100%;
 }
 
 .caption-text span {
@@ -58,13 +58,12 @@ img {
 }
 
 .image-number {
-  width: 40%;
   font-size: 13px;
 }
 
 .authors {
   position: relative;
-  left: 4%;
+  left: 6%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -91,6 +90,6 @@ img {
   border: 8.5px solid transparent;
   border-top-color: #CACACA;
   position: relative;
-  bottom: 41px;
-  left: 45px;
+  bottom: 20px;
+  right: 23px;
 }
