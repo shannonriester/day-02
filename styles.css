@@ -25,25 +25,31 @@ img {
 /*- - - - - Footer items (below main image)- - - - - */
 
 .image-footer {
-  margin-top: 10px;
-  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 7px;
   border-bottom: solid #CACACA 1px;
+  font-size: 15px;
 }
 
 .image-caption {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /*padding-right: 30px;*/
+  width: 60%;
 }
 
 .image-caption img {
   height: 30px;
-  margin-bottom: -10px;
 }
 
 .caption-text {
   margin: 0;
+  width: 100%;
+}
+
+.caption-text span {
+  color: #777777;
 }
 
 .image-caption a {
@@ -52,18 +58,19 @@ img {
 }
 
 .image-number {
-  display: inline-block;
-  padding-top: 5px;
+  width: 40%;
+  font-size: 13px;
 }
 
 .authors {
-  list-style-type: none;
+  position: relative;
+  left: 4%;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   padding: 0px;
   margin: 0;
-  align-items: center;
-  justify-content: space-around;
-  width: 25%;
+  list-style-type: none;
 }
 
 .authors img {
@@ -72,19 +79,10 @@ img {
 }
 
 .authors li {
-  display: inline-block;
   list-style-type: none;
-
 }
 
 /* - - triangle shapes - - */
-
-.octocat li {
-  /*position must be relative for absolution positioning to work later */
-  position: relative;
-  width: 0;
-	height: 0;
-}
 
 .authors::after {
   content: ' ';
@@ -94,5 +92,5 @@ img {
   border-top-color: #CACACA;
   position: relative;
   bottom: 41px;
-  left: 62px;
+  left: 45px;
 }
